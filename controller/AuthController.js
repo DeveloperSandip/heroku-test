@@ -29,7 +29,9 @@ router.post("/register", (req, res) => {
     },
     (err, user) => {
       if (err) throw err;
-      res.status(200).send("Registration Successfull");
+      res
+        .status(200)
+        .send({ status: 200, message: "Registration is successfull" });
     }
   );
 });
