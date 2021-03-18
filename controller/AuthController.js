@@ -41,13 +41,17 @@ router.post("/login", (req, res) => {
   const userDetails = req.body;
   User.findOne({ email: userDetails.email }, (err, user) => {
     if (err) return res.status(500).send("Error while Login");
-    if (!user) return res.status(400).send("No user Found");
+    if (!user)
+      return res.status(300).send({ status: 300, message: "No user found" });
     else {
       const isPasswordValid = bcrypt.compareSync(
         userDetails.password,
         user.password
       );
-      if (!isPasswordValid) return res.status(300).send("Invalid Password");
+      if (!isPasswordValid)
+        return res
+          .status(400)
+          .send({ status: 400, message: "Invalid Password" });
       const token = jwt.sign({ id: user._id }, config.secret, {
         expiresIn: 3600,
       });
@@ -57,11 +61,12 @@ router.post("/login", (req, res) => {
 });
 
 //get a user detail
-router.post("/getuserinfo", (req, res) => {
+router.get("/getuserinfo", (req, res) => {
   const token = req.headers["x-access-token"];
-  if (!token) res.send("No token provided");
+  if (!token)
+    res.status(400).send({ status: 400, message: "No token provided" });
   jwt.verify(token, config.secret, (err, data) => {
-    if (err) res.status(500).send("Invalid Token");
+    if (err) res.status(500).send({ status: 500, message: "Invalid Token" });
     User.findById(data.id, { password: 0 }, (err, result) => {
       res.send(result);
     });
