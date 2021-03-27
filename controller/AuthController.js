@@ -42,7 +42,12 @@ router.post("/login", (req, res) => {
   User.findOne({ email: userDetails.email }, (err, user) => {
     if (err) return res.status(500).send("Error while Login");
     if (!user)
-      return res.status(300).send({ status: 300, message: "No user found" });
+      return res
+        .status(300)
+        .send({
+          status: 300,
+          message: "Seems you are not registered with us..!",
+        });
     else {
       const isPasswordValid = bcrypt.compareSync(
         userDetails.password,
@@ -50,8 +55,11 @@ router.post("/login", (req, res) => {
       );
       if (!isPasswordValid)
         return res
-          .status(400)
-          .send({ status: 400, message: "Invalid Password" });
+          .status(200)
+          .send({
+            status: 400,
+            message: "Invalid Credentials. Please check once again..!",
+          });
       const token = jwt.sign({ id: user._id }, config.secret, {
         expiresIn: 3600,
       });
