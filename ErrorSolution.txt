@@ -1,0 +1,11 @@
+If you get any error during connection with your atlas DB. Make sure you checked the below steps - 
+ 
+** Check your atlas connection string
+** Check your internet connection
+** Check your DNS is setted to 8.8.8.8 and secondary to 8.8.4.4 (Global DNS by Google)
+** Check whether ip added in atlas as 0.0.0.0/0 (For connection from any ip)
+** Check user has access to read write permission
+
+
+
+****** Hope this will Help ******

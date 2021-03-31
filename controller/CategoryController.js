@@ -17,17 +17,14 @@ router.get("/category", async (req, res) => {
 
 //Add a Category
 
-router.post("/category/add", (req, res) => {
-  const categoryDetails = req.body;
-  Category.create(
-    { name: categoryDetails.name, imgUrl: categoryDetails.imgUrl },
-    (err, cat) => {
-      if (err) throw err;
-      res
-        .status(200)
-        .send({ status: 200, message: "Category successfully created" });
-    }
-  );
+router.post("/category/add", async (req, res) => {
+  const categoryDetails = { name: req.body.name, imgUrl: req.body.imgUrl };
+  try {
+    await Category.create(categoryDetails);
+    res.send({ status: 200, messgage: "Category Added" });
+  } catch (err) {
+    res.send({ status: 400, error: err });
+  }
 });
 
 module.exports = router;

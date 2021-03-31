@@ -19,36 +19,40 @@ router.get("/users", async (req, res) => {
 });
 
 //register a user
-router.post("/register", (req, res) => {
+router.post("/register", async (req, res) => {
   const userDetails = req.body;
   const hashPassword = bcrypt.hashSync(userDetails.password, 8);
-  User.create(
-    {
-      name: userDetails.name,
-      email: userDetails.email,
-      password: hashPassword,
-      role: userDetails.role ? userDetails.role : "user",
-    },
-    (err, user) => {
-      if (err) throw err;
-      res
-        .status(200)
-        .send({ status: 200, message: "Registration is successfull" });
-    }
-  );
+  const user = {
+    name: userDetails.name,
+    email: userDetails.email,
+    password: hashPassword,
+    role: userDetails.role ? userDetails.role : "user",
+    isVerified: userDetails.isVerified ? userDetails.isVerified : false,
+  };
+  try {
+    await User.create(user);
+    res
+      .status(200)
+      .send({ status: 200, message: "Registration is Successfull" });
+  } catch (err) {
+    res.status(400).send({
+      status: 400,
+      message: "Registration failed..! Please try again after sometimes",
+    });
+  }
 });
 
 //login a user
-router.post("/login", (req, res) => {
+router.post("/login", async (req, res) => {
   const userDetails = req.body;
-  User.findOne({ email: userDetails.email }, (err, user) => {
-    if (err) return res.status(500).send("Error while Login");
-    if (!user)
+  try {
+    const user = await User.findOne({ email: userDetails.email });
+    if (!user) {
       return res.status(300).send({
         status: 300,
         message: "Seems you are not registered with us..!",
       });
-    else {
+    } else {
       const isPasswordValid = bcrypt.compareSync(
         userDetails.password,
         user.password
@@ -63,7 +67,9 @@ router.post("/login", (req, res) => {
       });
       res.send({ status: 200, token });
     }
-  });
+  } catch (err) {
+    return res.status(500).send("Error while Login");
+  }
 });
 
 //get a user detail
@@ -71,11 +77,14 @@ router.get("/getuserinfo", (req, res) => {
   const token = req.headers["x-access-token"];
   if (!token)
     res.status(400).send({ status: 400, message: "No token provided" });
-  jwt.verify(token, config.secret, (err, data) => {
+  jwt.verify(token, config.secret, async (err, data) => {
     if (err) res.status(500).send({ status: 500, message: "Invalid Token" });
-    User.findById(data.id, { password: 0 }, (err, result) => {
-      res.send(result);
-    });
+    const user = await User.findById(data.id, { password: 0 });
+    try {
+      res.send(user);
+    } catch (err) {
+      res.send({ status: 400, message: err });
+    }
   });
 });
 
