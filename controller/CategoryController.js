@@ -6,11 +6,13 @@ router.use(express.urlencoded({ extended: true }));
 router.use(express.json());
 
 //Get all the categories
-router.get("/category", (req, res) => {
-  Category.find({}, (err, category) => {
-    if (err) throw err;
-    res.status(200).send(category);
-  });
+router.get("/category", async (req, res) => {
+  const categories = await Category.find({});
+  try {
+    res.send(categories);
+  } catch (error) {
+    res.status(500).send(error);
+  }
 });
 
 //Add a Category

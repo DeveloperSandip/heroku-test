@@ -9,11 +9,13 @@ router.use(express.urlencoded({ extended: true }));
 router.use(express.json());
 
 //get all the users
-router.get("/users", (req, res) => {
-  User.find({}, (err, users) => {
-    if (err) throw err;
+router.get("/users", async (req, res) => {
+  const users = await User.find({});
+  try {
     res.status(200).send(users);
-  });
+  } catch (error) {
+    res.status(500).send(error);
+  }
 });
 
 //register a user
