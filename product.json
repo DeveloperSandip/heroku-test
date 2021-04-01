@@ -1,5 +1,7 @@
 {
   "product_id": 123456,
+  "brand": "Samsung",
+  "series": "Galaxy Note",
   "product_name": "SAMSUNG Galaxy Note 10 Plus (Aura Black, 256 GB)  (12 GB RAM)",
   "seller_info": {
     "name": "SuperComNet",
@@ -27,8 +29,15 @@
       "otg_compatible": true
     },
     "display": {
-      "size": "17.27 cm (6.8 inch)",
-      "resolution": "3040 x 1440 pixel"
+      "size": {
+        "unit": "inch",
+        "height": 6.9
+      },
+      "resolution": {
+        "unit": "pixel",
+        "height": 1440,
+        "width": 3040
+      }
     },
     "os_processor": {
       "os": "Android Pie 9",
