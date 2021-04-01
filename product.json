@@ -1,0 +1,147 @@
+{
+  "product_id": 123456,
+  "product_name": "SAMSUNG Galaxy Note 10 Plus (Aura Black, 256 GB)  (12 GB RAM)",
+  "seller_info": {
+    "name": "SuperComNet",
+    "rating": 4.6,
+    "policies": ["7 Days Replacement Policy", "GST invoice available"]
+  },
+  "specifications": {
+    "gerneral": {
+      "box_contains": [
+        "Handset",
+        "Charger",
+        "USB Cable",
+        "S Pen",
+        "Screen Guard",
+        "Warranty Card",
+        "User Manual"
+      ],
+      "model_number": "Max Pro",
+      "model_name": "Max Pro",
+      "color": "Blue",
+      "browse_type": "Smartphones",
+      "sim_type": "Dual sim",
+      "hybrid_sim_slot": true,
+      "tochscreen": true,
+      "otg_compatible": true
+    },
+    "display": {
+      "size": "17.27 cm (6.8 inch)",
+      "resolution": "3040 x 1440 pixel"
+    },
+    "os_processor": {
+      "os": "Android Pie 9",
+      "processor_core": "Octa core",
+      "clock_speed": "2.7 GHz"
+    },
+    "memory_storage": {
+      "internal_storage": "256 GB",
+      "ram": "12 GB",
+      "expandable_storage": "1 TB",
+      "supported_memory_type": "microSD",
+      "memory_card_slot_type": "Hybrid Slot"
+    },
+    "camera": {
+      "primary": {
+        "availability": true,
+        "camera": "12MP (Dual Aperture) + 12MP + 16MP + TOF",
+        "features": [
+          "12MP (Wide-Angle Camera)",
+          "12MP (Telephoto Camera)",
+          "16MP (Ultra Wide Camera)",
+          "TOF (DepthVision Camera)"
+        ]
+      },
+      "secondary": {
+        "availability": true,
+        "camera": "10MP Front Camera"
+      }
+    },
+    "connectivity": {
+      "network_type": ["4G", "3G", "2G"],
+      "supported": ["4G LTE", "WCDMA", "GSM"]
+    },
+    "battery": {
+      "capacity": "4300 mAh",
+      "isRemovable": false
+    },
+    "dimensions": {
+      "measurement_unit": "mm",
+      "width": 77,
+      "height": 162.3,
+      "depth": 7.9,
+      "weight": {
+        "measurement_unit": "mm",
+        "weight": 198
+      }
+    },
+    "warranty": {
+      "summary": "Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories"
+    }
+  },
+  "manufacturer": {
+    "name": "Samsung India Electroincs Pvt. Ltd.",
+    "address": "6th Floor, DLF CenterSansad Marg New Delhi"
+  },
+  "importer": {
+    "name": "Samsung India Electroincs Pvt. Ltd.",
+    "address": "6th Floor, DLF CenterSansad Marg New Delhi"
+  },
+  "packer": {
+    "name": "Samsung India Electroincs Pvt. Ltd.",
+    "address": "6th Floor, DLF CenterSansad Marg New Delhi"
+  },
+  "origin": "India",
+  "ratings": {
+    "rate": 4.6,
+    "count": 4958,
+    "review_count": 624
+  },
+  "price": {
+    "currency": "INR",
+    "price": 59999
+  },
+  "inStock": true,
+  "qty": 250,
+  "highlights": [
+    "12 GB RAM | 256 GB ROM | Expandable Upto 1 TB",
+    "17.27 cm (6.8 inch) Display",
+    "12MP (Dual Aperture) + 12MP + 16MP + TOF | 10MP Front Camera",
+    "4300 mAh Battery",
+    "Super AMOLED Display"
+  ],
+  "payment_options": {
+    "emi": {
+      "availability": true
+    },
+    "debit_card": true,
+    "credit_card": true
+  },
+  "description": {
+    "heading": "Introducing Next-level Power",
+    "body": "The Galaxy Note10+ is designed to give you the mobile experience of a computer, a gaming console, a movie-tech camera, and an intelligent pen - all in one device. Powered by a 7nm processor, 12 GB of RAM, 256 GB of internal storage capacity and a 2.0 Gbps LTE connection, the Note 10+ lets you download files, live-game, and stream content seamlessly."
+  },
+  "thumbnails": [
+    {
+      "type": "image",
+      "url": "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/z/h/x/galaxy-note-10-plus-256-c-sm-n975fzkdins-samsung-12-original-imafj58jfcumtrjg.jpeg?q=70"
+    },
+    {
+      "type": "video",
+      "url": "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/r/z/p/galaxy-note-10-plus-256-b-sm-n975fzkdins-samsung-12-original-imafj58jsgkzhyaf.jpeg?q=70"
+    },
+    {
+      "type": "image",
+      "url": "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/5/j/p/galaxy-note-10-plus-512-c-sm-n975fzkgins-samsung-12-original-imafj58jterypsdq.jpeg?q=70"
+    },
+    {
+      "type": "image",
+      "url": "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/y/d/h/galaxy-note-10-plus-512-b-sm-n975fzkgins-samsung-12-original-imafj58jqyyhtzzj.jpeg?q=70"
+    },
+    {
+      "type": "image",
+      "url": "https://rukminim1.flixcart.com/image/416/416/k2jbyq80pkrrdj/mobile-refurbished/f/w/j/galaxy-note-10-plus-256-a-sm-n975fzkdins-samsung-12-original-imafj58j4huvagbd.jpeg?q=70"
+    }
+  ]
+}
