@@ -1,0 +1,160 @@
+{
+  "category": "appliances",
+  "type": "ac",
+  "brand": "Whirlpool",
+  "series": "Round Neck",
+  "product_name": "Whirlpool 4 in 1 Convertible Cooling 1.5 Ton 3 Star Split Inverter AC - White  (1.5T FLEXICHILL 3S COPR INV, Copper Condenser)",
+  "details": {
+    "seller_info": {
+      "name": "RAMTHRALLA Retail",
+      "rating": 4.6,
+      "policies": ["7 Days Replacement Policy", "GST invoice available"]
+    },
+    "specifications": {
+      "gerneral": {
+        "box_contains": [
+          "Handset",
+          "Charger",
+          "USB Cable",
+          "S Pen",
+          "Screen Guard",
+          "Warranty Card",
+          "User Manual"
+        ],
+        "model_number": "Max Pro",
+        "model_name": "Max Pro",
+        "color": "Blue",
+        "browse_type": "Smartphones",
+        "sim_type": "Dual sim",
+        "hybrid_sim_slot": true,
+        "tochscreen": true,
+        "otg_compatible": true
+      },
+      "display": {
+        "size": {
+          "unit": "inch",
+          "height": 6.9
+        },
+        "resolution": {
+          "unit": "pixel",
+          "height": 1440,
+          "width": 3040
+        }
+      },
+      "os_processor": {
+        "os": "Android Pie 9",
+        "processor_core": "Octa core",
+        "clock_speed": "2.7 GHz"
+      },
+      "memory_storage": {
+        "internal_storage": "256 GB",
+        "ram": "12 GB",
+        "expandable_storage": "1 TB",
+        "supported_memory_type": "microSD",
+        "memory_card_slot_type": "Hybrid Slot"
+      },
+      "camera": {
+        "primary": {
+          "availability": true,
+          "camera": "12MP (Dual Aperture) + 12MP + 16MP + TOF",
+          "features": [
+            "12MP (Wide-Angle Camera)",
+            "12MP (Telephoto Camera)",
+            "16MP (Ultra Wide Camera)",
+            "TOF (DepthVision Camera)"
+          ]
+        },
+        "secondary": {
+          "availability": true,
+          "camera": "10MP Front Camera"
+        }
+      },
+      "connectivity": {
+        "network_type": ["4G", "3G", "2G"],
+        "supported": ["4G LTE", "WCDMA", "GSM"]
+      },
+      "battery": {
+        "capacity": "4300 mAh",
+        "isRemovable": false
+      },
+      "dimensions": {
+        "measurement_unit": "mm",
+        "width": 77,
+        "height": 162.3,
+        "depth": 7.9,
+        "weight": {
+          "measurement_unit": "mm",
+          "weight": 198
+        }
+      },
+      "warranty": {
+        "summary": "Brand Warranty of 1 Year Available for Mobile and 6 Months for Accessories"
+      }
+    },
+    "manufacturer": {
+      "name": "Samsung India Electroincs Pvt. Ltd.",
+      "address": "6th Floor, DLF CenterSansad Marg New Delhi"
+    },
+    "importer": {
+      "name": "Samsung India Electroincs Pvt. Ltd.",
+      "address": "6th Floor, DLF CenterSansad Marg New Delhi"
+    },
+    "packer": {
+      "name": "Samsung India Electroincs Pvt. Ltd.",
+      "address": "6th Floor, DLF CenterSansad Marg New Delhi"
+    },
+    "origin": "India",
+    "ratings": {
+      "rate": 4.6,
+      "count": 4958,
+      "review_count": 624
+    },
+    "price": {
+      "currency": "INR",
+      "price": 32999
+    },
+    "inStock": true,
+    "qty": 5,
+    "highlights": [
+      "1.5 Ton",
+      "3 Star BEE Rating 2021 : For energy savings upto 15% (compared to Non-Inverter 1 Star)",
+      "Auto Restart: No need to manually reset the settings post power-cut",
+      "Copper : Energy efficient, best in class cooling with easy maintenance.",
+      "Sleep Mode: Auto-adjusts the temperature to ensure comfort during your sleep",
+      "Refresh Rate: 60 Hz"
+    ],
+    "payment_options": {
+      "emi": {
+        "availability": true
+      },
+      "debit_card": true,
+      "credit_card": true
+    },
+    "description": {
+      "heading": "",
+      "body": "Delight your senses by watching your favourite shows and movies on this Samsung smart TV. Its classy, I-shaped design makes it an ideal addition to your home. It also lets you use Google Assistant or Bixby to access various functions with a voice command."
+    },
+    "thumbnails": [
+      {
+        "type": "image",
+        "url": "https://rukminim1.flixcart.com/image/416/416/klgx0280/air-conditioner-new/l/d/k/1-5t-flexichill-3s-copr-inv-split-whirlpool-inverter-original-imagyhgyacprtxvz.jpeg?q=70"
+      },
+      {
+        "type": "image",
+        "url": "https://rukminim1.flixcart.com/image/416/416/klgx0280/air-conditioner-new/u/l/f/1-5t-flexichill-3s-copr-inv-split-whirlpool-inverter-original-imagyhgy5pzzdttq.jpeg?q=70"
+      },
+      {
+        "type": "image",
+        "url": "https://rukminim1.flixcart.com/image/416/416/kmgn0cw0/air-conditioner-new/o/h/z/1-5t-flexichill-3s-copr-inv-split-whirlpool-inverter-original-imagfc73pbgtahra.jpeg?q=70"
+      },
+      {
+        "type": "image",
+        "url": "https://rukminim1.flixcart.com/image/416/416/klgx0280/air-conditioner-new/x/t/k/1-0t-flexichill-5s-copr-inv-split-whirlpool-inverter-original-imagyhgybdc4pfzf.jpeg?q=70"
+      },
+      {
+        "type": "image",
+        "url": "https://rukminim1.flixcart.com/image/416/416/klgx0280/air-conditioner-new/6/g/j/1-0t-flexichill-5s-copr-inv-split-whirlpool-inverter-original-imagyhgyvecjpsym.jpeg?q=70"
+      }
+    ]
+  }
+}

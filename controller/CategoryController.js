@@ -6,7 +6,7 @@ router.use(express.urlencoded({ extended: true }));
 router.use(express.json());
 
 //Get all the categories
-router.get("/category", async (req, res) => {
+router.get("/", async (req, res) => {
   const categories = await Category.find({});
   try {
     res.send(categories);
@@ -17,7 +17,7 @@ router.get("/category", async (req, res) => {
 
 //Add a Category
 
-router.post("/category/add", async (req, res) => {
+router.post("/add", async (req, res) => {
   const categoryDetails = { name: req.body.name, imgUrl: req.body.imgUrl };
   try {
     await Category.create(categoryDetails);
