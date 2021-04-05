@@ -4,7 +4,6 @@
   "description": "A Node Application for JWT feature",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon app.js",
     "start": "node app.js"
   },
   "author": "Sandip Dhang",
